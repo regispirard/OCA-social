@@ -13,6 +13,7 @@
     "depends": ["mail_activity_team"],
     "data": [
         "security/ir.model.access.csv",
+        "views/mail_activity_team_views.xml",
     ],
     "assets": {},
 }
