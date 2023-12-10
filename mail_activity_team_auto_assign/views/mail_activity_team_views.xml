@@ -14,10 +14,22 @@
                     <group>
                         <group name="base">
                             <field name="active" invisible="1" />
+                            <field name="team_member_ids" invisible="1" />
+                            <field name="team_model_ids" invisible="1" />
+                            <field name="activity_model_ids" invisible="1" />
                             <field name="name" />
-                            <field name="team_id" />
-                            <field name="team_member_id" />
-                            <field name="rule_model" />
+                            <field
+                                name="team_id"
+                                options="{'no_create': True, 'no_edit': True}"
+                            />
+                            <field
+                                name="team_member_id"
+                                options="{'no_create': True, 'no_edit': True}"
+                            />
+                            <field
+                                name="rule_model"
+                                options="{'no_create': True, 'no_edit': True}"
+                            />
                             <field name="rule_domain" />
                         </group>
                     </group>
@@ -33,10 +45,19 @@
         <field name="model">mail.activity.team.rule</field>
         <field name="arch" type="xml">
            <tree editable="bottom">
+               <field name="team_member_ids" invisible="1" />
+               <field name="team_model_ids" invisible="1" />
+               <field name="activity_model_ids" invisible="1" />
                <field name="sequence" widget="handle" />
-               <field name="team_id" />
-               <field name="team_member_id" />
-               <field name="rule_model" />
+               <field name="team_id" options="{'no_create': True, 'no_edit': True}" />
+               <field
+                    name="team_member_id"
+                    options="{'no_create': True, 'no_edit': True}"
+                />
+               <field
+                    name="rule_model"
+                    options="{'no_create': True, 'no_edit': True}"
+                />
                <field name="rule_domain" />
            </tree>
         </field>
